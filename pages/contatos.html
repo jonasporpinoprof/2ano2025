@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Chapolin</title>
+    <link rel="shortcut icon" type="/image/png" href="/img/colorado.png"/>
+    <!-- Importar o CSS do Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+      html,body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;   
+      }
+      main{
+        flex: 1;
+      }
+      footer{
+        width: 100%;
+      }  
+    </style>
+    
+</head>
+<body class="bg-warning-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg text-bg-danger p-3">
+          <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="/index.html">
+              <img src="/img/colorado.png" alt="chapolin" width="30" height="24">
+              Chapolin Colorado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item p-1">
+                  <a type="button" class="btn btn-outline-warning" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item dropdown p-1">
+                  <a class="nav-link dropdown-toggle btn btn-outline-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu btn btn-outline-warning">
+                    <li><a class="dropdown-item" href="contados">Contatos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+        
+    <main>
+       
+    </main>    
+    
+    <footer class="text-muted bg-lith">
+      <div>
+        <p class="p-3 y-0 text-center container-fluid">&copy; Prof.Jonas 2025</p>
+      </div>
+
+    </footer>
+    <!-- Importar o JS do Bootstrap e dependências -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
