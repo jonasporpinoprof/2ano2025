@@ -58,9 +58,44 @@
           </div>
         </nav>
     </header>
-        
+    
+    <!-- Aqui é meu script -->
+    <script src="/js/script.js"></script>
     <main>
-       
+      <h1 class="text-center">Minha Loja Virtual do Chapolin</h1>
+      <div class="container"> 
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Imagem</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade da Unidade</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="/img/produtos/camiseta.jpeg" alt="camiseta" width="200"></td> <!-- Titulo Imagem  -->
+                <td>
+                  <div>Nome: Camiseta Chapolin e Thor</div>
+                  <div>Tamanho: M</div> <!-- Titulo Produdo  -->
+                  <div>Cor: Cinza</div>
+                </td>
+                <td id="preco_1">R$ 0.0</td> <!-- Titulo Preço  -->
+                <td>
+                  <input type="number" value="0" id="qtd_1"
+                  class="form-control" onchange="atualizarTotal()" 
+                  style="width: 100px;"> <!-- Titulo Quant.  -->
+                </td>
+                <td id="total_1">R$ 0.0</td> <!-- Titulo Total  -->
+              </tr>
+            </tbody>
+        </table>
+            <div class="text-end">
+              <h4>Total Geral: <span id="total_geral">R$ 0,00</span></h4>
+            </div>
+      </div>
     </main>    
     
     <footer class="text-muted text-bg-danger">
