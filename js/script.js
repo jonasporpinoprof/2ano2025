@@ -15,6 +15,20 @@ function atualizarTotal() {
       document.getElementById("total_2").textContent = formatarMoeda(total2);
       totalGeral += total2;
 
+      // Produto 3
+      let preco3 = parseFloat(document.getElementById("preco_3").textContent);
+      let qtd3 = parseInt(document.getElementById("qtd_3").value);
+      let total3 = preco3 * qtd3;
+      document.getElementById("total_3").textContent = formatarMoeda(total3);
+      totalGeral += total3;
+
+       // Produto 4
+      let preco4 = parseFloat(document.getElementById("preco_4").textContent);
+      let qtd4 = parseInt(document.getElementById("qtd_4").value);
+      let total4 = preco4 * qtd4;
+      document.getElementById("total_4").textContent = formatarMoeda(total4);
+      totalGeral += total4;
+
 
       // Atualiza total geral
       document.getElementById("total_geral").textContent = formatarMoeda(totalGeral);
