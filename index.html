@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Chapolin</title>
+    <link rel="shortcut icon" type="image/png" href="img/colorado.png"/>
+    <!-- Importar o CSS do Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      html,body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;   
+      }
+      main{
+        flex: 1;
+      }
+      footer{
+        width: 100%;
+      }
+    </style>
+    
+</head>
+<body class="bg-warning-subtle">
+    <!-- minha sessão de cabeçalho ou nav bar-->
+    <header>
+        <nav class="navbar navbar-expand-lg text-bg-danger p-3">
+          <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="index.html">
+              <img src="img/colorado.png" alt="chapolin" width="30" height="24">
+              Chapolin Colorado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item p-1">
+                  <a type="button" class="btn btn-outline-warning" href="pages/produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item dropdown p-1">
+                  <a class="nav-link dropdown-toggle btn btn-outline-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu btn btn-outline-warning">
+                    <li><a class="dropdown-item" href="pages/contatos.html">Contatos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+        
+    <main>
+    <!-- Minha sessão de carrosel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/chapolin.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/canecas.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/mochilas.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br>
+    <!--Minha sessão de cards-->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/produtos/caneca.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Caneca Chapolin <br> --- </h5>
+              <p class="card-text">De <span style="text-decoration: line-through;">R$ 53,90</span></p>
+              <p class="card-text"> <h4> Por apenas <span style="font-weight: 600; color: rgb(2, 182, 2);">R$ 23,90</span> </h4> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/produtos/camiseta.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camiseta Chapolin Super Marreta Bionica 100% Algodão</h5>
+              <p class="card-text">De <span style="text-decoration: line-through;">R$ 93,90</span></p>
+              <p class="card-text"> <h4> Por apenas <span style="font-weight: 600; color: rgb(2, 182, 2);">R$ 63,90</span> </h4> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/produtos/placa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Placa DE Alumínio Chapolin "Segam-me os Bons!"</h5>
+              <p class="card-text">De <span style="text-decoration: line-through;">R$ 33,90</span></p>
+              <p class="card-text"> <h4> Por apenas <span style="font-weight: 600; color: rgb(2, 182, 2);">R$ 22,90</span> </h4> </p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+    </main>    
+    <p></p>
+    <footer class="text-muted bg-danger">
+      <div>
+        <p class="p-3 y-0 text-center container-fluid text-warning">&copy; Prof.Jonas 2025</p>
+      </div>
+
+    </footer>
+    <!-- Importar o JS do Bootstrap e dependências -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

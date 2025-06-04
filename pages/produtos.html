@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Chapolin</title>
+    <link href="../img/colorado.png" type="image/png" rel="shortcut icon"/>
+    <!-- Importar o CSS do Bootstrap -->
+    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <!-- Importar o script.js da pasta js -->
+    <script  src="../js/script.js" type="text/javascript" rel="javascript"></script>
+    <style>
+        html,body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;   
+      }
+      main{
+        flex: 1;
+      }
+      footer{
+        width: 100%;
+
+      }
+    </style>
+    
+</head>
+<body class="bg-warning-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg text-bg-danger p-3">
+          <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="../index.html">
+              <img src="../img/colorado.png" alt="chapolin" width="30" height="24">
+              Chapolin Colorado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item p-1">
+                  <a type="button" class="btn btn-outline-warning" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item dropdown p-1">
+                  <a class="nav-link dropdown-toggle btn btn-outline-warning" href="#" role="button" 
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu btn btn-outline-warning">
+                    <li><a class="dropdown-item" href="contatos.html">Contatos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+        
+    <main>
+
+
+      <h1 class="text-center mt-4">Minha Loja Virtual</h1>
+      <div class="container">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Imagem</th>
+              <th>Produto</th>
+              <th>Preço Unitário</th>
+              <th>Quantidade</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="../img/produtos/camiseta.jpeg" alt="camiseta" width="200"></td>
+              <td>
+                <div>Camiseta Chapolin e Thor</div>
+                <div>Tamanho: M</div>
+                <div>Cor: cinza</div>
+              </td>
+              <td id="preco_1">63.90</td>
+              <td>
+                <input type="number" id="qtd_1" value="0" min="0" class="form-control" 
+                onchange="atualizarTotal()" style="width: 80px;">
+              </td>
+              <td id="total_1">R$ 0,00</td>
+            </tr>
+
+            <tr>
+              <td><img src="../img/produtos/caneca.jpg" alt="caneca" width="200"></td>
+              <td>
+                <div>Caneca Chapolin</div>
+                <div>Média</div>
+                <div>Cor: Branca</div>
+              </td>
+              <td id="preco_2">23.90</td>
+              <td>
+                <input type="number" id="qtd_2" value="0" min="0" class="form-control" 
+                onchange="atualizarTotal()" style="width: 80px;">
+              </td>
+              <td id="total_2">R$ 0,00</td>
+            </tr>
+
+            <tr>
+              <td><img src="../img/produtos/kitEscola.jpg" alt="caneca" width="200"></td>
+              <td>
+                <div>Kit Escolar Chapolin</div>
+                <div>Caderno, Estojo Box e Bolsa</div>
+                <div>Cor: Vermelho</div>
+              </td>
+              <td id="preco_3">259.99</td>
+              <td>
+                <input type="number" id="qtd_3" value="0" min="0" class="form-control" 
+                onchange="atualizarTotal()" style="width: 80px;">
+              </td>
+              <td id="total_3">R$ 0,00</td>
+            </tr>
+
+            <tr>
+              <td><img src="../img/produtos/placa.jpg" alt="caneca" width="200"></td>
+              <td>
+                <div>Placa Decorativa De Alumínio - Chapolin</div>
+                <div>Placa De Carro</div>
+                <div>Cor: Vermelho</div>
+              </td>
+              <td id="preco_4">22.90</td>
+              <td>
+                <input type="number" id="qtd_4" value="0" min="0" class="form-control" 
+                onchange="atualizarTotal()" style="width: 80px;">
+              </td>
+              <td id="total_4">R$ 0,00</td>
+            </tr>
+            
+          </tbody>
+        </table>
+
+        <div class="text-end">
+          <h4>Total Geral: <span id="total_geral">R$ 0,00</span></h4>
+        </div>
+      </div>
+    
+  </main>
+
+    <footer class="text-muted bg-danger">
+      <div>
+        <p class="p-3 y-0 text-center container-fluid text-warning">&copy; Prof.Jonas 2025</p>
+      </div>
+
+    </footer>
+    <!-- Importar o JS do Bootstrap e dependências -->
+    <script src="../js/bootstrap.bundle.min.js" type="text/javascript" rel="javascript"></script>
+</body>
+</html>
